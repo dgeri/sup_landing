@@ -17,6 +17,7 @@ h4 {
 }
 a {
   text-decoration: none;
+  color: #000000;
 }
 .btn a {
   position: absolute;
@@ -86,6 +87,11 @@ a {
   width: 241px;
   height: 66px;
   background-image: url("./img/btn-s.png");
+}
+.btn-m{
+  width: 241px;
+  height: 66px;
+  background-image: url("./img/btn-m.png");
 }
 
 .section-highlights {
@@ -199,4 +205,74 @@ td {
   bottom: 0;
   right: 0;
   width: 45%;
+}
+
+.form-checkbox-wrapper{
+  width: 100%;
+  display: flex;
+}
+.services{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.way{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-contacts-wrapper{
+  display: flex;
+}
+.btn-wrapper{
+  display: flex;
+}
+.instagram{
+  position: relative;
+  padding-left: 50px;
+}
+.instagram::before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('./img/instagram.png');
+  background-repeat: no-repeat;
+}
+.section-sponsors-list{
+  display: flex;
+  justify-content: space-between;
+}
+.sponsors-list__item{
+  background-color: white;
+}
+.section-partners-list{
+  display: flex;
+  justify-content: space-between;
+}
+.partners-list-item{
+  background-color: white;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info{
+  display: flex;
+}
+.footer-contact{
+  text-align: right;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.ip{
+  display: flex;
+}
+.event-doc a{
+  text-decoration: underline;
 }

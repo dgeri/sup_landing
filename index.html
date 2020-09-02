@@ -14,11 +14,11 @@
     <section class="section-outer section-nav">
       <div class="section-wrapper">
         <ul class="nav-list">
-          <li class="nav-list__item">Расписание</li>
-          <li class="nav-list__item">Купить билет</li>
-          <li class="nav-list__item">Организаторы</li>
-          <li class="nav-list__item">Партнеры</li>
-          <li class="nav-list__item nav-list__phone">+1 234 567-89-00</li>
+          <li class="nav-list__item"><a href="#section-time">Расписание</a></li>
+          <li class="nav-list__item"><a href="#section-tickets">Купить билет</a></li>
+          <li class="nav-list__item"><a href="#section-sponsors">Организаторы</a></li>
+          <li class="nav-list__item"><a href="#section-partners">Партнеры</a></li>
+          <li class="nav-list__item nav-list__phone"><a href="tel:+1 234 567-89-00">+1 234 567-89-00</a></li>
         </ul>
       </div>
     </section>
@@ -81,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section class="section-outer section-time">
+    <section class="section-outer section-time" id="section-time">
       <div class="section-wrapper">
         <h1 class="title">расписание</h1>
         <div class="schedule-wrapper">
@@ -159,17 +159,139 @@
       </div>
       </div>
     </section>
-    <section class="section-outer section-tickets">
-      <div class="section-wrapper">section-tickets</div>
+    <section class="section-outer section-tickets" id="section-tickets">
+      <div class="section-wrapper">
+        <h1 class="title">Купить билет</h1>
+        <form action="" class="section-tickets-form">
+          <div class="form-checkbox-wrapper">
+          <fieldset class="services">
+            <legend>Выберите услугу</legend>
+            <div>
+              <input type="checkbox" id="ticket" name="ticket" value="">
+              <label for="ticket">Входной билет</label>
+            </div>
+            <div>
+              <input type="checkbox" id="walk" name="walk" value="walk">
+              <label for="walk">Прогулка "Закат" на SUP 12/09</label>
+            </div>
+            <div>
+              <input type="checkbox" id="walk-sup" name="walk-sup" value="walk-sup">
+              <label for="walk-sup">Прогулка на SUP 13/09 14:45</label>
+            </div>
+            <div>
+              <input type="checkbox" id="camp" name="camp" value="camp">
+              <label for="camp">Место в палаточном лагере</label>
+            </div>
+            <div>
+              <input type="checkbox" id="walk-sec" name="walk-sec" value="walk-sec">
+              <label for="walk-sec">Прогулка на SUP 13/09 12:00</label>
+            </div>
+          </fieldset>
+          <fieldset class="way">
+            <legend>Как вы добираетесь?</legend>
+            <div>
+              <input type="checkbox" id="car" name="car" value="car">
+              <label for="car">Личный автомобиль</label>
+            </div>
+            <div>
+              <input type="checkbox" id="transfer" name="transfer" value="transfer">
+              <label for="transfer">Трансфер</label>
+            </div>
+          </fieldset>
+          </div>
+          <div class="form-contacts-wrapper">
+          <fieldset>
+            <legend>Введите персональные данные</legend>
+              <input type="text" id="name" name="name"  placeholder="Имя">
+              <input type="text" id="surname" name="surname"  placeholder="Фамилия">
+              <input type="text" id="mail" name="mail"  placeholder="Телефон">
+              <input type="text" id="phone" name="phone"  placeholder="E-mail">
+              <div>
+                <input type="checkbox" id="doc" name="doc">
+                <label for="doc">Оплачивая билет, Я согласен(-на) с <a href="">договором-оферты мероприятия</a></label>
+              </div>
+              <div class="btn-wrapper">
+                <div class="btn btn-m">
+                  <a href="">Перейти на сайт оплаты</a>
+                </div>
+                <a href="">Порядок оплаты</a>
+              </div>
+          </fieldset>
+          
+          <div class="total-price">
+            <p>Общая стоимость билета</p>
+            <span>5 990</span>
+          </div>
+        </div>
+        </form>
+      </div>
     </section>
-    <section class="section-outer section-sponsors">
-      <div class="section-wrapper">section-sponsors</div>
+    <section class="section-outer section-sponsors" id="section-sponsors">
+      <div class="section-wrapper">
+        <h1 class="title">Организаторы</h1>
+        <div class="section-sponsors-list">
+          <div class="sponsors-list__item">
+            <img src="./img/logo-sup.png" alt="">
+            <p>SUP TRAVEL RUSSIA</p>
+            <span class="instagram">sup_travel</span>
+          </div>
+          <div class="sponsors-list__item">
+            <img src="./img/kolkunovo.png" alt="">
+            <p>Парк-отель Колкуново</p>
+            <span class="instagram">kolkunovo</span>
+          </div> 
+          <div class="sponsors-list__item">
+            <img src="" alt="">
+            <p>DJ Инесса Лойм</p>
+            <span class="instagram">tyyfelka</span>
+          </div> 
+          <div class="sponsors-list__item">
+            <img src="" alt="">
+            <p>Шоу-мен Руслан Лойм</p>
+            <span class="instagram">ruslanloym</span>
+          </div> 
+          <div class="sponsors-list__item">
+            <img src="" alt="">
+            <p>Шоу-мен Алексей Варгин</p>
+            <span class="instagram">alexey_vargin</span>
+          </div> 
+        </div>
+      </div>
     </section>
-    <section class="section-outer section-partners">
-      <div class="section-wrapper">section-partners</div>
+    <section class="section-outer section-partners" id="section-partners">
+      <div class="section-wrapper">
+        <h1 class="title">Партнеры</h1>
+        <div class="section-partners-list">
+          <div class="partners-list-item"><img src="./img/trk.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/hershel.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/ortlieb.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/buff.png" alt=""></div>
+        </div>
+      </div>
     </section>
     <section class="section-outer section-footer">
-      <div class="section-wrapper">section-footer</div>
+      <div class="section-wrapper">
+        <div class="footer-top">
+          <div class="footer-info">
+            <img src="./img/logo-sup.png" alt="">
+            <div>
+              <p>#SUPARTY_KOLKUNOVO</p>
+              <p>12 и 13 сентября 2020</p>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <p><a href="tel:123">+1 234 567-89-00</a></p>
+            <p><a href="mailto:sup-travel-russia@gmail.com">sup-travel-russia@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="event-doc"><a href="">Договор-оферты мероприятия</a></div>
+          <div class="ip">
+            <p>ИП Залошков Денис Владимирович</p>
+            <p>ИП Залошков Руслан Артемьевич</p>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
