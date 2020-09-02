@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: #000000;
 }
+p{
+  margin: 0;
+}
 .btn a {
   position: absolute;
   top: 24px;
@@ -88,8 +91,8 @@ a {
   height: 66px;
   background-image: url("./img/btn-s.png");
 }
-.btn-m{
-  width: 241px;
+.btn-m {
+  width: 333.5px;
   height: 66px;
   background-image: url("./img/btn-m.png");
 }
@@ -150,7 +153,7 @@ a {
   line-height: 38px;
   margin-bottom: 10px;
 }
-.main-description-list{
+.main-description-list {
   margin-bottom: 40px;
 }
 .main-description-list__item {
@@ -170,7 +173,7 @@ a {
   left: 0;
   background-image: url("./img/descr.png");
 }
-.section-time .title{
+.section-time .title {
   margin-bottom: 60px;
 }
 .time-title {
@@ -189,90 +192,175 @@ td {
   font-weight: 500;
   width: 170px;
 }
-.schedule-wrapper{
+.schedule-wrapper {
   background-color: #ffffff;
   display: flex;
   padding: 75px 90px;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 100px;
 }
 .section-time__first,
-.section-time__second{
+.section-time__second {
   width: 45%;
 }
-.section-time__second img{
+.section-time__second img {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 45%;
 }
 
-.form-checkbox-wrapper{
+.form-checkbox-wrapper {
   width: 100%;
   display: flex;
 }
-.services{
+.services {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.way{
+.way {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
 }
-.form-contacts-wrapper{
+.form-contacts-wrapper {
   display: flex;
+  justify-content: space-between;
 }
-.btn-wrapper{
+.btn-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
-.instagram{
+.instagram {
   position: relative;
-  padding-left: 50px;
+  padding-left: 30px;
+  font-weight: normal;
+font-size: 18px;
+line-height: 38px;
+text-align: center;
 }
-.instagram::before{
-  content: '';
-  width: 30px;
-  height: 30px;
+.instagram::before {
+  content: "";
+  width: 21px;
+  height: 21px;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('./img/instagram.png');
+  background-image: url("./img/instagram.png");
   background-repeat: no-repeat;
 }
-.section-sponsors-list{
+.section-sponsors-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
-.sponsors-list__item{
+.sponsors-list__item {
   background-color: white;
+  width: 18%;
+  height: 200px;
+  box-shadow: 0px 7px 25px rgba(79, 95, 110, 0.15);
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
 }
-.section-partners-list{
+.sponsors-list__item p{
+  font-weight: normal;
+font-size: 14px;
+line-height: 38px;
+margin: 0;
+text-align: center;
+}
+.list-item-wrapper{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.section-partners-list {
+  margin-top: 40px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 }
-.partners-list-item{
+.partners-list-item {
   background-color: white;
+  box-shadow: 0px 7px 25px rgba(79, 95, 110, 0.15);
+  width: 22%;
+height: 200px;
+
 }
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
 }
-.footer-info{
+.footer-info {
+  width: 340px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
 }
-.footer-contact{
-  text-align: right;
+.footer-contact {
+  text-align: right
 }
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.ip{
+.ip {
   display: flex;
 }
-.event-doc a{
+.event-doc a {
   text-decoration: underline;
+}
+legend {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 38px;
+}
+label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 38px;
+}
+fieldset {
+  border: none;
+}
+.person legend {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 40%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e3e6ef;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+}
+.person {
+  width: 60%;
+}
+.link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 38px;
+  text-decoration-line: underline;
 }

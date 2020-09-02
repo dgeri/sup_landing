@@ -200,7 +200,7 @@
           </fieldset>
           </div>
           <div class="form-contacts-wrapper">
-          <fieldset>
+          <fieldset class="person">
             <legend>Введите персональные данные</legend>
               <input type="text" id="name" name="name"  placeholder="Имя">
               <input type="text" id="surname" name="surname"  placeholder="Фамилия">
@@ -208,13 +208,13 @@
               <input type="text" id="phone" name="phone"  placeholder="E-mail">
               <div>
                 <input type="checkbox" id="doc" name="doc">
-                <label for="doc">Оплачивая билет, Я согласен(-на) с <a href="">договором-оферты мероприятия</a></label>
+                <label for="doc">Оплачивая билет, Я согласен(-на) с <a class="link" href="">договором-оферты мероприятия</a></label>
               </div>
               <div class="btn-wrapper">
                 <div class="btn btn-m">
                   <a href="">Перейти на сайт оплаты</a>
                 </div>
-                <a href="">Порядок оплаты</a>
+                <a class="link" href="">Порядок оплаты</a>
               </div>
           </fieldset>
           
@@ -231,29 +231,40 @@
         <h1 class="title">Организаторы</h1>
         <div class="section-sponsors-list">
           <div class="sponsors-list__item">
-            <img src="./img/logo-sup.png" alt="">
+            <div class="list-item-wrapper">
+            <img src="./img/logo-sup.png" width=64
+            height=64 alt="">
             <p>SUP TRAVEL RUSSIA</p>
             <span class="instagram">sup_travel</span>
+            </div>
           </div>
           <div class="sponsors-list__item">
+            <div class="list-item-wrapper">
             <img src="./img/kolkunovo.png" alt="">
             <p>Парк-отель Колкуново</p>
             <span class="instagram">kolkunovo</span>
+          </div>
           </div> 
           <div class="sponsors-list__item">
+            <div class="list-item-wrapper">
             <img src="" alt="">
             <p>DJ Инесса Лойм</p>
             <span class="instagram">tyyfelka</span>
+            </div>
           </div> 
           <div class="sponsors-list__item">
+            <div class="list-item-wrapper">
             <img src="" alt="">
             <p>Шоу-мен Руслан Лойм</p>
             <span class="instagram">ruslanloym</span>
+            </div>
           </div> 
           <div class="sponsors-list__item">
+            <div class="list-item-wrapper">
             <img src="" alt="">
             <p>Шоу-мен Алексей Варгин</p>
             <span class="instagram">alexey_vargin</span>
+            </div>
           </div> 
         </div>
       </div>
@@ -273,7 +284,7 @@
       <div class="section-wrapper">
         <div class="footer-top">
           <div class="footer-info">
-            <img src="./img/logo-sup.png" alt="">
+            <img src="./img/logo-sup.png" width="110" height="110" alt="">
             <div>
               <p>#SUPARTY_KOLKUNOVO</p>
               <p>12 и 13 сентября 2020</p>
