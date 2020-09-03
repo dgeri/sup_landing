@@ -29,7 +29,7 @@
           <h1 class="title">Самое яркое закрытие </br>SUP&nbsp;сезона 2020</h1>
           <h3 class="subtitle">12 и 13 сентября 2020</h3>
           <div class="btn btn-s">
-            <a href="">Купить билет</a>
+            <a href="#section-tickets">Купить билет</a>
           </div>
         </div>
         <div class="section-header__gallery"></div>
@@ -76,7 +76,7 @@
             <ul class="main-description-list__item">Обед (с 13:00 до 15:30)</ul>
           </ul>
           <div class="btn btn-s">
-            <a href="">Купить билет</a>
+            <a href="#section-tickets">Купить билет</a>
           </div>
         </div>
       </div>
@@ -162,13 +162,13 @@
     <section class="section-outer section-tickets" id="section-tickets">
       <div class="section-wrapper">
         <h1 class="title">Купить билет</h1>
-        <form action="" class="section-tickets-form">
+        <form action="" method="post" class="section-tickets-form">
           <div class="form-checkbox-wrapper">
           <fieldset class="services">
             <legend>Выберите услугу</legend>
             <div class="services-wrapper">
               <label for="ticket">
-              <input type="checkbox" id="ticket" name="ticket" value="">
+              <input type="checkbox" checked id="ticket" name="ticket" value="">
               Входной билет</label>
               <label for="walk">
               <input type="checkbox" id="walk" name="walk" value="walk">
@@ -204,20 +204,23 @@
               <input type="text" id="mail" name="mail"  placeholder="Телефон">
               <input type="text" id="phone" name="phone"  placeholder="E-mail">
               <div>
-                <input type="checkbox" id="doc" name="doc">
-                <label for="doc">Оплачивая билет, Я согласен(-на) с <a class="link" href="">договором-оферты мероприятия</a></label>
+                <input type="checkbox" checked id="doc" name="doc">
+                <label for="doc">Оплачивая билет, Я согласен(-на) с <a class="link" href="suparty.sup-travel-russia.com/kolkunovo_terms" target="_blank">договором-оферты мероприятия</a></label>
               </div>
               <div class="btn-wrapper">
-                <div class="btn btn-m">
-                  <a href="">Перейти на сайт оплаты</a>
-                </div>
-                <a class="link" href="">Порядок оплаты</a>
+                <button type='submit' class="btn btn-m">
+                  <a href="https://www.loym.ru/#оплата" target="_blank">Перейти на сайт оплаты</a>
+                </button type='submit'>
+                <a class="link popup-info" href="">Порядок оплаты</a>
               </div>
           </fieldset>
           
           <div class="total-price">
             <p>Общая стоимость билета</p>
-            <span>5 990</span>
+            <div class="total-price-wrapper">
+            <input class="total-price-value" id="total-price-value" value='2000'></input>
+            <label for="total-price-value">₽</label>
+          </div>
           </div>
         </div>
         </form>
@@ -232,35 +235,41 @@
             <img src="./img/logo-sup.png" width=64
             height=64 alt="">
             <p>SUP TRAVEL RUSSIA</p>
-            <span class="instagram">sup_travel</span>
+            <a href="http://www.instagram.com/sup_travel_russia" target="_blank" class="instagram">sup_travel_russia</a>
             </div>
           </div>
           <div class="sponsors-list__item">
             <div class="list-item-wrapper">
-            <img src="./img/kolkunovo.png" alt="">
+            <a href="http://www.kolkunovo.ru" target="_blank">
+              <img src="./img/kolkunovo.png" alt="">
+            </a>
             <p>Парк-отель Колкуново</p>
-            <span class="instagram">kolkunovo</span>
+            <a href="http://www.instagram.com/kolkunovo" target="_blank"  class="instagram">kolkunovo</a>
           </div>
           </div> 
           <div class="sponsors-list__item">
             <div class="list-item-wrapper">
-            <img src="" alt="">
+            <a href="http://www.djinessa.ru" target="_blank">
+              <img src="./img/INESSA.svg" width="100" alt="">
+            </a>
             <p>DJ Инесса Лойм</p>
-            <span class="instagram">tyyfelka</span>
+            <a href="http://www.instagram.com/tyyfelka" target="_blank" class="instagram">tyyfelka</a>
             </div>
           </div> 
           <div class="sponsors-list__item">
             <div class="list-item-wrapper">
-            <img src="" alt="">
+            <a href="http://www.loym.ru" target="blank">
+              <img src="./img/show.jpeg" class="img-wrapper" alt="">
+            </a>
             <p>Шоу-мен Руслан Лойм</p>
-            <span class="instagram">ruslanloym</span>
+            <a href="http://www.instagram.com/ruslanloym" target="_blank" class="instagram">ruslanloym</a>
             </div>
           </div> 
           <div class="sponsors-list__item">
             <div class="list-item-wrapper">
-            <img src="" alt="">
+            <img src="./img/vargin.png" class="img-wrapper" alt="">
             <p>Шоу-мен Алексей Варгин</p>
-            <span class="instagram">alexey_vargin</span>
+            <a href="http://www.instagram.com/alexey_vargin" target="_blank" class="instagram">alexey_vargin</a>
             </div>
           </div> 
         </div>
@@ -270,11 +279,11 @@
       <div class="section-wrapper">
         <h1 class="title">Партнеры</h1>
         <div class="section-partners-list">
-          <div class="partners-list-item"><img src="./img/trk.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/trk.png" class="img-wrapper" alt=""></div>
           <div class="partners-list-item"><img src="./img/hershel.png" alt=""></div>
-          <div class="partners-list-item"><img src="./img/ortlieb.png" alt=""></div>
-          <div class="partners-list-item"><img src="./img/buff.png" alt=""></div>
-          <div class="partners-list-item"><img src="./img/buff.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/ortlieb.png" class="img-wrapper"  alt=""></div>
+          <div class="partners-list-item"><img src="./img/buff.png" alt="" ></div>
+          <div class="partners-list-item"><img src="./img/slam.png" class="img-wrapper" alt=""></div>
         </div>
       </div>
     </section>
@@ -294,13 +303,26 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="event-doc"><a href="">Договор-оферты мероприятия</a></div>
+          <div class="event-doc"><a href="http://suparty.sup-travel-russia.com/kolkunovo_terms" target="_blank">Договор-оферты мероприятия</a></div>
           <div class="ip">
-            <p>ИП Залошков Денис Владимирович</p>
+            <p class="ip-1">ИП Залошков Денис Владимирович</p>
             <p>ИП Залошков Руслан Артемьевич</p>
           </div>
         </div>
       </div>
     </section>
+    <section class="section-popup">
+      <div class="popup-overlay"></div>
+      <div class="popup-wrapper">
+        <button class="btn-close"></button>
+        <h1 class="title">порядок оплаты</h1>
+        <ul class="popup-list">
+          <li class="popup-list-item">1. При нажатии на кнопку «Перейти на сайт оплаты» Вы попадаете на сайт главного организатора мероприятия ИП Лойм Руслан Артемьевич www.loym.ru</li>
+          <li class="popup-list-item">2. В соответствующем поле «Оплатить» Вы введете общую сумму (она отображается здесь при выборе услуг).</li>
+          <li class="popup-list-item">3. По факту оплаты наши организаторы свяжутся с Вами для подтверждения.</li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
