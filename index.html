@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <section class="section-outer section-nav">
+    <section class="section-outer section-nav" id="section-nav">
       <div class="section-wrapper">
         <ul class="nav-list">
           <li class="nav-list__item"><a href="#section-time">Расписание</a></li>
@@ -166,36 +166,33 @@
           <div class="form-checkbox-wrapper">
           <fieldset class="services">
             <legend>Выберите услугу</legend>
-            <div>
+            <div class="services-wrapper">
+              <label for="ticket">
               <input type="checkbox" id="ticket" name="ticket" value="">
-              <label for="ticket">Входной билет</label>
-            </div>
-            <div>
+              Входной билет</label>
+              <label for="walk">
               <input type="checkbox" id="walk" name="walk" value="walk">
-              <label for="walk">Прогулка "Закат" на SUP 12/09</label>
-            </div>
-            <div>
+              Прогулка "Закат" на SUP 12/09</label>
+              <label for="walk-sup">
               <input type="checkbox" id="walk-sup" name="walk-sup" value="walk-sup">
-              <label for="walk-sup">Прогулка на SUP 13/09 14:45</label>
-            </div>
-            <div>
+              Прогулка на SUP 13/09 14:45</label>
+              <label for="camp">
               <input type="checkbox" id="camp" name="camp" value="camp">
-              <label for="camp">Место в палаточном лагере</label>
-            </div>
-            <div>
+              Место в палаточном лагере</label>
+              <label for="walk-sec">
               <input type="checkbox" id="walk-sec" name="walk-sec" value="walk-sec">
-              <label for="walk-sec">Прогулка на SUP 13/09 12:00</label>
+              Прогулка на SUP 13/09 12:00</label>
             </div>
           </fieldset>
           <fieldset class="way">
             <legend>Как вы добираетесь?</legend>
-            <div>
+            <div class="way-wrapper">
+              <label for="car">
               <input type="checkbox" id="car" name="car" value="car">
-              <label for="car">Личный автомобиль</label>
-            </div>
-            <div>
+              Личный автомобиль</label>
+              <label for="transfer">
               <input type="checkbox" id="transfer" name="transfer" value="transfer">
-              <label for="transfer">Трансфер</label>
+              Трансфер</label>
             </div>
           </fieldset>
           </div>
@@ -277,6 +274,7 @@
           <div class="partners-list-item"><img src="./img/hershel.png" alt=""></div>
           <div class="partners-list-item"><img src="./img/ortlieb.png" alt=""></div>
           <div class="partners-list-item"><img src="./img/buff.png" alt=""></div>
+          <div class="partners-list-item"><img src="./img/buff.png" alt=""></div>
         </div>
       </div>
     </section>
@@ -284,7 +282,7 @@
       <div class="section-wrapper">
         <div class="footer-top">
           <div class="footer-info">
-            <img src="./img/logo-sup.png" width="110" height="110" alt="">
+            <a href="#section-nav"><img src="./img/logo-sup.png" width="110" height="110" alt=""></a>
             <div>
               <p>#SUPARTY_KOLKUNOVO</p>
               <p>12 и 13 сентября 2020</p>
