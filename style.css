@@ -621,7 +621,11 @@ button {
   .nav-list__item {
     padding-right: 20px;
   }
+  .section-header__gallery{
+    opacity: .3;
+  }
 }
+
 @media (max-width: 769px) {
   .section-outer {
     padding-left: 50px;
@@ -727,6 +731,13 @@ button {
   }
   .loym {
     padding-left: 20px;
+  }
+  .section-sponsors::before,
+  .section-main::before  {
+    width: 100%;
+  }
+  .nav-btns-wrapper {
+    display: none;
   }
 }
 @media (max-width: 414px) {

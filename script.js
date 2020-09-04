@@ -87,19 +87,19 @@ var sliderList = document.querySelector(".header-gallery-wrapper");
 let transitionWidth = 0;
 
 btnNext.addEventListener("click", function () {
-  // if(screen.width<650){
-  //     transitionWidth = -75;
-  // }
-  if (transitionWidth < 5500) {
+  if (transitionWidth > -5580) {
     transitionWidth = transitionWidth - 930;
-  } else if(transitionWidth >= 5580) {
-    transitionWidth = 0;
+  } else if(transitionWidth <= -5580) {
+    transitionWidth = -5580;
   }
   sliderList.style.transform = `translateX(${transitionWidth}px)`;
-  console.log(transitionWidth);
 });
 
 btnPrev.addEventListener("click", function () {
-  transitionWidth;
+  if (transitionWidth < -900) {
+    transitionWidth = transitionWidth + 930;
+  } else if(transitionWidth <= 580) {
+    transitionWidth = 0;
+  }
   sliderList.style.transform = `translateX(${transitionWidth}px)`;
 });
