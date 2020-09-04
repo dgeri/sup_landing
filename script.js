@@ -34,7 +34,9 @@ walkSunset.addEventListener("click", function () {
   price.value = totalPrice;
   if (walkSunsetCount >= 15) {
     walkSunset.checked = false;
-    alert("К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!");
+    alert(
+      "К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!"
+    );
   }
 });
 walkSupFirst.addEventListener("click", function () {
@@ -48,7 +50,9 @@ walkSupFirst.addEventListener("click", function () {
   price.value = totalPrice;
   if (walkSupFirstCount >= 15) {
     walkSupFirst.checked = false;
-    alert("К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!");
+    alert(
+      "К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!"
+    );
   }
 });
 walkSupSecond.addEventListener("click", function () {
@@ -62,7 +66,9 @@ walkSupSecond.addEventListener("click", function () {
   price.value = totalPrice;
   if (walkSupSecondCount >= 15) {
     walkSupSecond.checked = false;
-    alert("К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!");
+    alert(
+      "К сожалению, все места забронированы! Но Вы обязательно сможете попробовать SUP на месте!"
+    );
   }
 });
 camp.addEventListener("click", function () {
@@ -72,4 +78,28 @@ camp.addEventListener("click", function () {
     totalPrice -= 250;
   }
   price.value = totalPrice;
+});
+
+var btnPrev = document.querySelector(".btn-prev");
+var btnNext = document.querySelector(".btn-next");
+
+var sliderList = document.querySelector(".header-gallery-wrapper");
+let transitionWidth = 0;
+
+btnNext.addEventListener("click", function () {
+  // if(screen.width<650){
+  //     transitionWidth = -75;
+  // }
+  if (transitionWidth < 5500) {
+    transitionWidth = transitionWidth - 930;
+  } else if(transitionWidth >= 5580) {
+    transitionWidth = 0;
+  }
+  sliderList.style.transform = `translateX(${transitionWidth}px)`;
+  console.log(transitionWidth);
+});
+
+btnPrev.addEventListener("click", function () {
+  transitionWidth;
+  sliderList.style.transform = `translateX(${transitionWidth}px)`;
 });

@@ -36,6 +36,53 @@ p {
 .section-nav {
   padding: 50px 0;
 }
+/*                                                Gallery                              */
+
+.section-header__gallery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 931px;
+  height: 621px;
+  overflow: hidden;
+  z-index: -1;
+}
+.header-gallery-wrapper {
+  width: calc(930px * 7);
+}
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+}
+.gallery-list-item img {
+  width: 930px;
+  height: 621px;
+}
+.nav-btns-wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 90px;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  
+}
+.btn-prev {
+  width: 23.33px;
+  height: 43.84px;
+  background-image: url("./img/btn-prev.png");
+  cursor: pointer;
+  z-index: 3;
+}
+.btn-next {
+  width: 23.33px;
+  height: 43.84px;
+  background-image: url("./img/btn-next.png");
+  cursor: pointer;
+  z-index: 3;
+}
+
 .section-outer {
   padding-left: 110px;
   padding-right: 80px;
@@ -59,10 +106,14 @@ p {
   margin-left: auto;
 }
 .section-header {
-  padding-top: 150px;
+  padding-top: 250px;
   padding-bottom: 60px;
   padding-right: 0;
+  position: relative;
 }
+/* .section-header .section-wrapper{
+  width: 60%;
+} */
 .section-header__hash {
   font-weight: normal;
   font-size: 18px;
@@ -182,6 +233,9 @@ p {
 }
 .section-time .title {
   margin-bottom: 60px;
+}
+.schedule-poster {
+  width: 100%;
 }
 .time-title {
   font-style: normal;
@@ -444,7 +498,7 @@ input[type="checkbox"] {
   text-transform: uppercase;
   width: 110px;
 }
-.total-price-value+label{
+.total-price-value + label {
   font-weight: bold;
   font-size: 48px;
 }
@@ -530,12 +584,12 @@ input[type="checkbox"] {
   height: 33.84px;
   border: none;
   background: transparent;
-  background-image: url('./img/btn-close.png');
+  background-image: url("./img/btn-close.png");
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
-button{
+button {
   border: none;
   background: transparent;
 }
@@ -671,10 +725,13 @@ button{
     justify-content: flex-start;
     margin-top: 10px;
   }
+  .loym {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 414px) {
   .popup-wrapper {
-    padding:100px 40px;
+    padding: 100px 40px;
   }
   .title {
     font-size: 28px;
